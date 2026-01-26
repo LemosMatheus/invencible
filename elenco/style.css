@@ -276,7 +276,9 @@
 }
 .show {
   animation: aparecer_perso 1s ease forwards;
+  border: 10px solid rgba(239, 227, 58, 0.83);
 }
+
 @keyframes aparecer_perso {
   from {
     opacity: 0;
