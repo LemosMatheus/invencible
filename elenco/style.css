@@ -1,14 +1,18 @@
 .desktop {
   /* Desktop */
   position: relative;
-  width: 1280px;
-  height: 1080px;
-  left: 64px;
-  top: 100px;
+  width: 100%;
+  min-width: 0;
+  min-height: 200vh;
   overflow-y: scroll;
   background: #FFFFFF;
+  background-image: url("../img/Rectangle\ 7.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  scrollbar-width: none ;
 }
-.header {
+.desktop .header {
   /* Header 1 */
 /* Layout automático */
   display: flex;
@@ -16,8 +20,8 @@
   justify-content: center;
   align-items: center;
   padding: 24px 0px;
-  position: absolute;
-  width: 1280px;
+  position: fixed;
+  width: 100%;
   height: 103px;
   left: 0px;
   top: 0px;
@@ -30,12 +34,13 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 24px 0px;
-  position: absolute;
-  width: 1280px;
+  padding: 24px 5vh;
+  position: fixed;
+  width: 100%;
   height: 103px;
   left: 0px;
   top: 0px;
+  justify-content: space-between;
 }
 .text-wrapper-2 {
   /* INICIO */
@@ -127,10 +132,9 @@
   background-size: cover;
   background-position: center;
 }
-.rectangle-2 {
-  /* Rectangle 9 */
+/* .rectangle-2 {
 
-  position: absolute;
+  position: relative;
   height: 245px;
   left: 0px;
   right: 0px;
@@ -138,21 +142,19 @@
 
   background: #283D5A;
 
-}
-.cards {
-  /* cards */
+} */
+.hero-section .cards {
 
-  position: absolute;
-  width: 1200px;
-  height: 200px;
-  left: 25px;
-  top: 858px;
+  display: flex;
+  width: 80%;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
 
 }
 .rectangle-8 {
   /* Rectangle 15 */
 
-  position: absolute;
   width: 150px;
   height: 200px;
   right: 55px;
@@ -168,7 +170,6 @@
 .rectangle-7 {
   /* Rectangle 14 */
 
-  position: absolute;
   width: 150px;
   height: 200px;
   left: 865px;
@@ -184,7 +185,6 @@
 .rectangle-6 {
   /* Rectangle 13 */
 
-  position: absolute;
   width: 150px;
   height: 200px;
   left: 655px;
@@ -200,7 +200,6 @@
 .rectangle-5 {
   /* Rectangle 12 */
 
-  position: absolute;
   width: 150px;
   height: 200px;
   left: 445px;
@@ -217,7 +216,6 @@
 .rectangle-4 {
   /* Rectangle 11 */
 
-  position: absolute;
   width: 150px;
   height: 200px;
   left: 235px;
@@ -234,7 +232,6 @@
 .rectangle-3 {
   /* Rectangle 10 */
 
-  position: absolute;
   width: 150px;
   height: 200px;
   left: 25px;
@@ -247,33 +244,61 @@
   cursor: pointer;
 
 }
-.hero-section {
-  /* Rectangle 8 */
+/* .hero-section {
 
-  position: absolute;
-  width: 1280px;
-  height: 980px;
+  position: relative;
+  width: 100%;
+  height: 100%;
   left: 0px;
   top: 0px;
 
   background: radial-gradient(21.48% 21.48% at 50% 50%, rgba(101, 97, 97, 0.5) 0%, rgba(22, 21, 21, 0.6) 100%);
 
-}
-.rectangle {
-  /* Rectangle 7 */
+} */
 
-  position: absolute;
-  width: 1280px;
-  height: 980px;
-  left: 0px;
-  top: 0px;
-
-  /* background: url(inv7.png); */
-
-}
 #card_p {
   opacity: 0;
 }
+.hero-section {
+  /* min-height: 100vh; */
+  height: 100%;
+  padding-top: 120px;
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  /* gap: 40px; */
+  /* max-width: 1200px; */
+  margin: auto;
+}
+/* .hero-image {
+  width: 360px;
+  height: 600px;
+  border-radius: 8px;
+  margin: auto;
+} */
+.cards {
+  position: absolute;
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+/* .rectangle-3,.rectangle-4,.rectangle-5,.rectangle-6,.rectangle-7,.rectangle-8 {
+  width: 150px;
+  height: 200px;
+  border-radius: 6px;
+  background-color: #D9D9D9;
+  background: center / cover no-repeat;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cards:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+} */
 .show {
   animation: aparecer_perso 1s ease forwards;
   border: 10px solid rgba(239, 227, 58, 0.83);

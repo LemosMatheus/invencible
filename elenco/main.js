@@ -11,12 +11,13 @@ cards.forEach(element => {
     element.addEventListener("click", ()=> {
         cards.forEach(card => {
             card.classList.remove("show");
+            card_principal.classList.remove("show");
             // card.classList.remove("active");
         });
         for (let i =0; i<7; i++) {
             if (element===cards[i]) {
-                card_principal.style.backgroundImage = `url(${imagens[i]})`;
                 card_principal.classList.add("show");
+                card_principal.style.backgroundImage = `url(${imagens[i]})`;
                 element.classList.add("show");
             }
         }
