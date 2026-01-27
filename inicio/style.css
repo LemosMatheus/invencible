@@ -228,9 +228,8 @@
 } */
 
 .frame .hero-section {
-  position: relative;
-  width: 1280px;
-  height: 980px;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -238,18 +237,14 @@
 
 .frame .hero-background-image {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 1280px;
+  width: 100vw;
   height: 980px;
   object-fit: cover;
+  background-position: center;
 }
 
 .frame .hero-gradient-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1280px;
+  width: 100vw;
   height: 980px;
   background: radial-gradient(
     50% 50% at 61% 13%,
@@ -282,7 +277,7 @@
 
 .frame .story-section {
   position: relative;
-  width: 1280px;
+  width: 100vw;
   height: 980px;
   display: flex;
   align-items: flex-end;
@@ -291,9 +286,7 @@
 
 .frame .story-background {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 1280px;
+  width: 100vw;
   height: 980px;
   background: linear-gradient(
     180deg,
@@ -326,7 +319,7 @@
 
 .frame .invitation-section {
   position: relative;
-  width: 1280px;
+  width: 100vw;
   height: 980px;
   display: flex;
   align-items: center;
@@ -334,19 +327,15 @@
 }
 
 .frame .invitation-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1280px;
+  position: relative;
+  width: 100vw;
   height: 980px;
   background-color: #6461611a;
 }
 
 .frame .invitation-background-overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 1280px;
+  width: 100vw;
   height: 980px;
   background-color: #b8aaaa4c;
   opacity: 0.8;
@@ -355,7 +344,7 @@
 .frame .invitation-character-image {
   position: absolute;
   top: 259px;
-  left: 733px;
+  left: 50vw;
   width: 500px;
   height: 500px;
   object-fit: cover;
@@ -382,7 +371,7 @@
 
 .frame .header {
   display: flex;
-  width: 1280px;
+  width: 100%;
   align-items: center;
   justify-content: center;
   padding: 24px 0px;
