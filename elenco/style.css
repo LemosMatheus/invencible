@@ -1,9 +1,7 @@
 .desktop {
-  /* Desktop */
   position: relative;
   width: 100%;
-  min-width: 0;
-  min-height: 200vh;
+  height: 100%;
   overflow-y: scroll;
   background: #FFFFFF;
   background-image: url("../img/Rectangle\ 7.png");
@@ -13,8 +11,6 @@
   scrollbar-width: none ;
 }
 .desktop .header {
-  /* Header 1 */
-/* Layout automático */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -27,9 +23,6 @@
   top: 0px;
 }
 .nav {
-  /* Header 1 */
-
-/* Layout automático */
   display: inline-flex;
   gap: 70px;
   padding: 16px 40px;
@@ -42,34 +35,31 @@
   justify-content: center;
   position: relative;
 }
+.info_conteiner{
+  width: 100%;
+  height: 60vh;
+}
+
 .text-wrapper-2 {
-  /* INICIO */
 
   width: 34px;
   height: 23px;
-
   font-family: 'Anton';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 145%;
-  /* ou 23px */
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: -0.005em;
-
   color: rgba(239, 227, 58, 0.83);
-
-
-  /* Auto layout por dentro */
   flex: none;
   order: 0;
   flex-grow: 0;
 
 }
 .text-wrapper-3 {
-  /* ELENCO */
 
   width: 43px;
   height: 23px;
@@ -79,24 +69,18 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 145%;
-  /* ou 23px */
   display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: -0.005em;
   text-decoration-line: underline;
-
   color: rgba(239, 227, 58, 0.83);
-
-
-  /* Auto layout por dentro */
   flex: none;
   order: 1;
   flex-grow: 0;
 
 }
 .text-wrapper{
-  /* fgbdcbxbxccnxbczbnzcxnbxcbnncxbnzcxbmnnxcjhkzcdfbnmjcxbnmjdfcvjmhbfdjhfvjdhbcxfvdjhbfvdhjbvxdfhbjfvhb */
 
   position: absolute;
   width: 474px;
@@ -109,7 +93,6 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 145%;
-  /* ou 52px */
   display: flex;
   align-items: center;
   text-align: center;
@@ -120,40 +103,24 @@
 
 }
 .div {
-  /* Rectangle 16 */
-
-  position: absolute;
   width: 360px;
   height: 616px;
-  left: 134px;
-  top: 157px;
-
   background: #D9D9D9;
   background-size: cover;
   background-position: center;
+  margin-left: 10vw;
 }
-/* .rectangle-2 {
 
-  position: relative;
-  height: 245px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-
-  background: #283D5A;
-
-} */
 .hero-section .cards {
 
   display: flex;
-  width: 80%;
+  width: 100%;
   height: 100%;
   flex-direction: row;
   flex-wrap: wrap;
 
 }
 .rectangle-8 {
-  /* Rectangle 15 */
 
   width: 150px;
   height: 200px;
@@ -168,7 +135,6 @@
   cursor: pointer;
 }
 .rectangle-7 {
-  /* Rectangle 14 */
 
   width: 150px;
   height: 200px;
@@ -183,7 +149,6 @@
 
 }
 .rectangle-6 {
-  /* Rectangle 13 */
 
   width: 150px;
   height: 200px;
@@ -198,7 +163,6 @@
 
 }
 .rectangle-5 {
-  /* Rectangle 12 */
 
   width: 150px;
   height: 200px;
@@ -214,7 +178,6 @@
 
 }
 .rectangle-4 {
-  /* Rectangle 11 */
 
   width: 150px;
   height: 200px;
@@ -230,11 +193,9 @@
 
 }
 .rectangle-3 {
-  /* Rectangle 10 */
 
   width: 150px;
   height: 200px;
-  left: 25px;
   bottom: 22px;
   background: #D9D9D9;
   background-image: url("../img/mini-cards/Invincible_thumbnail.png");
@@ -244,17 +205,6 @@
   cursor: pointer;
 
 }
-/* .hero-section {
-
-  position: relative;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-
-  background: radial-gradient(21.48% 21.48% at 50% 50%, rgba(101, 97, 97, 0.5) 0%, rgba(22, 21, 21, 0.6) 100%);
-
-} */
 
 #card_p {
   opacity: 0;
@@ -270,35 +220,14 @@
   /* max-width: 1200px; */
   margin: auto;
 }
-/* .hero-image {
-  width: 360px;
-  height: 600px;
-  border-radius: 8px;
-  margin: auto;
-} */
 .cards {
-  position: absolute;
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   gap: 24px;
   margin-top: 40px;
   flex-wrap: wrap;
 }
-/* .rectangle-3,.rectangle-4,.rectangle-5,.rectangle-6,.rectangle-7,.rectangle-8 {
-  width: 150px;
-  height: 200px;
-  border-radius: 6px;
-  background-color: #D9D9D9;
-  background: center / cover no-repeat;
-  cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
 
-.cards:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-} */
 .show {
   animation: aparecer_perso 1s ease forwards;
   border: 10px solid rgba(239, 227, 58, 0.83);
@@ -312,5 +241,90 @@
   to {
     opacity: 1;
     transform: translateY(0px);
+  }
+}
+
+@media (max-width: 1024px) {
+  /* TABLET */
+  .hero-section {
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .text-wrapper {
+    max-width: 420px;
+    font-size: 32px;
+  }
+
+  .div {
+    width: 320px;
+    height: 560px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* MOBILE */
+  .nav {
+    gap: 24px;
+    padding: 12px 20px;
+  }
+
+  .hero-section {
+    padding-top: 140px;
+  }
+
+  .info_conteiner {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .text-wrapper {
+    position: static;
+    width: 100%;
+    max-width: 90%;
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .div {
+    width: 280px;
+    height: 480px;
+    margin-left: 0;
+  }
+
+  .cards {
+    gap: 16px;
+  }
+
+  .rectangle-3,
+  .rectangle-4,
+  .rectangle-5,
+  .rectangle-6,
+  .rectangle-7,
+  .rectangle-8 {
+    width: 120px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* MOBILE PEQUENO */
+  .nav {
+    gap: 16px;
+  }
+
+  .text-wrapper {
+    font-size: 24px;
+  }
+
+  .rectangle-3,
+  .rectangle-4,
+  .rectangle-5,
+  .rectangle-6,
+  .rectangle-7,
+  .rectangle-8 {
+    width: 100px;
+    height: 140px;
   }
 }

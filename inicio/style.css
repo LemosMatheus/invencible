@@ -1,8 +1,6 @@
 .frame {
   background-color: #ffffff;
   width: 100%;
-  min-width: 0;
-  min-height: 2864px;
   display: flex;
   position: relative;
 
@@ -11,7 +9,6 @@
   display: flex;
   width: 100%;
   max-width: 100%;
-  height: 2864px;
   position: relative;
   flex-direction: column;
   align-items: center;
@@ -363,7 +360,7 @@
   font-family: "Anton-Regular", Helvetica;
   font-weight: 400;
   color: #f9d404;
-  font-size: 40px;
+  font-size: 3rem;
   letter-spacing: -0.20px;
   line-height: 58.0px;
   z-index: 2;
@@ -380,30 +377,6 @@
   left: 0;
   z-index: 10;
 }
-
-/* .frame .header-spacer {
-  position: relative;
-  width: 1420px;
-  height: 3529px;
-  margin-left: -259.50px;
-  pointer-events: none;
-} */
-
-/* .frame .nav {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 70px;
-  padding: 16px 40px;
-  position: relative;
-  flex: 0 0 auto;
-  margin-right: -259.50px;
-  margin-left: -150vh;
-  background-color: #0000000d;
-  border-radius: 40px;
-  backdrop-filter: blur(35px) brightness(100%);
-  -webkit-backdrop-filter: blur(35px) brightness(100%);
-} */
 
 .frame .nav-link {
   position: relative;
@@ -452,8 +425,11 @@
 .story-background,
 .invitation-background,
 .invitation-background-overlay {
-  width: 100%;
-  height: 100%;
+  /*width: 100%;
+  height: 100vh;*/
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
 }
 
 @media (max-width: 1200px) {
@@ -499,10 +475,6 @@
     height: 100vh;
   }
   .frame .invitation-text {
-    position: absolute;
-    top: 60vh;
-    left: 30vh;
-    width: 70%;
     height: auto;
     text-align: left;
     font-size: 40px;
@@ -568,12 +540,18 @@
   }
 }
 @media (max-width: 600px) {
+  .frame .invitation-section{
+    display: flex;
+    flex-direction: row;
+  }
+
   .frame .invitation-section .invitation-character-image {
     width: 40%;
     top: 10vh;
     object-fit: contain;
   }
   .frame .invitation-text {
+
     top: 60vh;
     font-size: 30px;
     width: 40%;
