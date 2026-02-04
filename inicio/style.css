@@ -22,15 +22,6 @@
   display: none;
 }
 
-/* .frame .rectangle {
-  position: absolute;
-  top: 1960px;
-  left: 0;
-  width: 1280px;
-  height: 980px;
-  background-color: #b8aaaa4c;
-  opacity: 0.8;
-} */
 
 .frame .img {
   position: absolute;
@@ -41,12 +32,7 @@
   object-fit: cover;
 }
 
-/* .frame .rectangle-2 {
-  position: relative;
-  width: 1280px;
-  height: 980px;
-  object-fit: cover;
-} */
+
 
 .frame .div {
   position: absolute;
@@ -62,18 +48,6 @@
   opacity: 0.9;
 }
 
-/* .frame .rectangle-3 {
-  position: relative;
-  width: 1280px;
-  height: 980px;
-  background: linear-gradient(
-    180deg,
-    rgba(11, 22, 27, 1) 0%,
-    rgba(39, 49, 50, 1) 42%,
-    rgba(77, 100, 110, 1) 68%,
-    rgba(192, 191, 191, 1) 100%
-  );
-} */
 
 .frame .text-wrapper {
   position: absolute;
@@ -113,12 +87,6 @@
   line-height: 58.0px;
 }
 
-/* .frame .rectangle-4 {
-  position: relative;
-  width: 1280px;
-  height: 980px;
-  background-color: #6461611a;
-} */
 
 .frame .text-wrapper-2 {
   position: absolute;
@@ -139,7 +107,6 @@
 
 .frame .header {
   display: flex;
-  /* width: 1280px; */
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -151,9 +118,7 @@
 
 .frame .div-2 {
   position: relative;
-  /* width: 1420px;  */
   height: 3529px;
-  /* margin-left: -259.50px; */
 }
 
 .frame .nav {
@@ -162,9 +127,7 @@
   justify-content: center;
   gap: 70px;
   padding: 16px 40px;
-  /* position: relative; */
   flex: 0 0 auto;
-  /* margin-right: -259.50px; */
   background-color: #0000000d;
   border-radius: 40px;
   backdrop-filter: blur(35px) brightness(100%);
@@ -205,24 +168,6 @@
   text-decoration: underline;
   white-space: nowrap;
 }
-/* Original CSS code should be injected here */
-
-/* .frame .desktop {
-  display: flex;
-  width: 1280px;
-  height: 2864px;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff;
-  overflow: hidden;
-  overflow-x: scroll;
-}
-
-.frame .desktop::-webkit-scrollbar {
-  width: 0;
-  display: none;
-} */
 
 .frame .hero-section {
   width: 100vw;
@@ -425,8 +370,6 @@
 .story-background,
 .invitation-background,
 .invitation-background-overlay {
-  /*width: 100%;
-  height: 100vh;*/
   position: absolute;
   width: 100vw;
   height: 100vh;

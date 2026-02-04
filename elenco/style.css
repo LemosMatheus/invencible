@@ -210,14 +210,11 @@
   opacity: 0;
 }
 .hero-section {
-  /* min-height: 100vh; */
   height: 100%;
   padding-top: 120px;
   display: flex;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  /* gap: 40px; */
-  /* max-width: 1200px; */
   margin: auto;
 }
 .cards {
@@ -245,7 +242,6 @@
 }
 
 @media (max-width: 1024px) {
-  /* TABLET */
   .hero-section {
     padding-top: 120px;
     display: flex;
@@ -264,7 +260,6 @@
 }
 
 @media (max-width: 768px) {
-  /* MOBILE */
   .nav {
     gap: 24px;
     padding: 12px 20px;
@@ -309,7 +304,6 @@
 }
 
 @media (max-width: 480px) {
-  /* MOBILE PEQUENO */
   .nav {
     gap: 16px;
   }

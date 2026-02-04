@@ -1,0 +1,260 @@
+/* =========================
+   BASE
+========================= */
+
+.frame {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  
+  .frame .desktop {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    overflow-x: hidden;
+  }
+  
+  .frame .desktop::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* =========================
+     HEADER / NAV
+  ========================= */
+  
+  .frame .header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 24px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+  
+  .frame .nav {
+    display: flex;
+    gap: 70px;
+    padding: 16px 40px;
+    background-color: #0000000d;
+    border-radius: 40px;
+    backdrop-filter: blur(35px);
+  }
+  
+  .frame .nav-link {
+    font-family: "Anton-Regular", Helvetica;
+    font-size: 16px;
+    color: #efe33ad4;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  
+  .frame .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .frame .nav-link-underline {
+    text-decoration: underline;
+  }
+  
+  /* =========================
+     SECTIONS (GLOBAL)
+  ========================= */
+  
+  .hero-section,
+  .story-section,
+  .invitation-section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* =========================
+     HERO SECTION
+  ========================= */
+  
+  .frame .hero-background-image,
+  .frame .hero-gradient-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .frame .hero-background-image {
+    object-fit: cover;
+  }
+  
+  .frame .hero-gradient-overlay {
+    background: radial-gradient(
+      50% 50% at 61% 13%,
+      rgba(98, 95, 95, 0.65) 0%,
+      rgba(25, 20, 20, 0.65) 100%
+    );
+    opacity: 0.9;
+  }
+  
+  .frame .hero-title {
+    position: relative;
+    z-index: 1;
+    width: min(90%, 720px);
+    font-family: "Anton-Regular", Helvetica;
+    font-size: clamp(48px, 6vw, 96px);
+    line-height: 1.2;
+    text-align: center;
+    color: #fbfeff;
+    -webkit-text-stroke: 3px #00bcf0;
+  }
+  
+  /* =========================
+     STORY SECTION
+  ========================= */
+  
+  .frame .story-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(11, 22, 27, 1) 0%,
+      rgba(39, 49, 50, 1) 42%,
+      rgba(77, 100, 110, 1) 68%,
+      rgba(192, 191, 191, 1) 100%
+    );
+  }
+  
+  .frame .story-description {
+    position: relative;
+    z-index: 1;
+    width: min(90%, 600px);
+    margin-left: 82px;
+    margin-bottom: 80px;
+    font-family: "Anton-Regular", Helvetica;
+    font-size: clamp(22px, 4vw, 40px);
+    line-height: 1.4;
+    color: #ffffff;
+    -webkit-text-stroke: 2px #ffe556;
+  }
+  
+  /* =========================
+     INVITATION SECTION
+  ========================= */
+  
+  .frame .invitation-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #6461611a;
+  }
+  
+  .frame .invitation-background-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #b8aaaa4c;
+    opacity: 0.8;
+  }
+  
+  .frame .invitation-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px;
+    gap: 32px;
+  }
+  
+  .frame .invitation-text {
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    font-family: "Anton-Regular", Helvetica;
+    font-size: clamp(24px, 3vw, 40px);
+    line-height: 1.5;
+    color: #f9d404;
+  }
+  
+  .frame .invitation-character-image {
+    position: relative;
+    z-index: 1;
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+  }
+  
+  /* =========================
+     MEDIA QUERIES
+  ========================= */
+  
+  @media (max-width: 900px) {
+    .frame .nav {
+      gap: 32px;
+    }
+  
+    .frame .story-description {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .frame .hero-title {
+      font-size: clamp(32px, 8vw, 48px);
+      padding: 0 16px;
+    }
+  
+    .frame .story-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .frame .story-description {
+      width: 90%;
+      margin: 0;
+    }
+  
+    .frame .invitation-section {
+      flex-direction: column;
+      justify-content: center;
+      padding: 24px 16px;
+    }
+  
+    .frame .invitation-text {
+      width: 100%;
+      text-align: center;
+      order: 2;
+    }
+  
+    .frame .invitation-character-image {
+      width: 70%;
+      order: 1;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .frame .nav {
+      padding: 12px 16px;
+      gap: 16px;
+    }
+  
+    .frame .nav-link {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .frame .invitation-character-image {
+      width: 85%;
+    }
+  
+    .frame .invitation-text {
+      font-size: 22px;
+    }
+  }
+  
